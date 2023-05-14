@@ -1,0 +1,70 @@
+/* color palette from <https://github.com/vuejs/theme> */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+:root {
+  --vt-c-white: #ffffff;
+
+  --vt-c-purple: #720060;
+  --vt-c-purple-soft: #fde2ff;
+
+  --vt-c-blue: #002772;
+  --vt-c-blue-soft: #d6e6ff;
+
+  --vt-c-black: #1e1e1e;
+  --vt-c-black-soft: #3f3f3f;
+
+  --vt-c-grey: #cccccc;
+  --vt-c-grey-soft: #d8d7d7;
+
+  --vt-c-text-light-1: var(--vt-c-purple);
+  --vt-c-text-light-2: var(--vt-c-blue);
+  --vt-c-text-dark-1: var(--vt-c-black);
+  --vt-c-text-dark-2: var(--vt-c-black-soft);
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-background: var(--vt-c-white);
+  --color-background-women: var(--vt-c-purple-soft);
+  --color-background-men: var(--vt-c-blue-soft);
+  --color-background-available: var(--vt-c-grey-soft);
+
+  --color-border: var(--vt-c-grey);
+  --color-border-available: var(--vt-c-black);
+
+  --color-text: var(--vt-c-black);
+  --color-text-light: var(--vt-c-white);
+  --color-text-sub: var(--vt-c-black-soft);
+  --color-text-men: var(--vt-c-blue);
+  --color-text-women: var(--vt-c-purple);
+
+  --color-rounded-men: var(--vt-c-blue);
+  --color-rounded-women: var(--vt-c-purple);
+
+  --color-button-men: var(--vt-c-blue);
+  --color-button-women: var(--vt-c-purple);
+
+  /* --color-heading: var(--vt-c-text-light-1);
+  --color-text: var(--vt-c-text-light-1);
+
+  --section-gap: 160px; */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  /* background: var(--color-background); */
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6;
+  font-family: "Inter", sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
